@@ -25,7 +25,15 @@ const pizza = [
     },
     {
         name: "Chicago Deep Dish Pizza",
-        info: "Includes "
+        info: "Includes freshly made tomato sauce with Mozzarella Cheese topped with fresh cut basil",
+        price: 40,
+        img: "https://giordanos.com/wp-content/uploads/Hero-image_1210-v2.jpg"
+    },
+    {
+        name: "Sushi Bagel",
+        info: "",
+        price: 45,
+        img: ""
     }
 
 ]
