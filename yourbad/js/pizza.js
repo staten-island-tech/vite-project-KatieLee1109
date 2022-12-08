@@ -30,7 +30,7 @@ const pizza = [
         img: "https://giordanos.com/wp-content/uploads/Hero-image_1210-v2.jpg"
     },
     {
-        name: "Sushi Bagel",
+        name: "Sushi Pizza",
         info: "",
         price: 45,
         img: ""
