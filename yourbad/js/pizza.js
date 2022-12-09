@@ -31,9 +31,12 @@ const pizza = [
     },
     {
         name: "Sushi Pizza",
-        info: "",
+        info: "Includes sushi rice and salmon, tuna with mayo",
         price: 45,
-        img: ""
+        img: "https://i.pinimg.com/originals/2d/5b/e4/2d5be4e118530ae96d4f7c789776af77.png"
+    },
+    {
+        name: ""
     }
 
 ]
