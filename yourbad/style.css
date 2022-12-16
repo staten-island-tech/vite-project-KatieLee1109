@@ -1,4 +1,8 @@
-#app{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 90 px;
+
+*{
+  background-color: blanchedalmond;
+  font-size: 80 px;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
 }
+

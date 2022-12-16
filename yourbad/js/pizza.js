@@ -36,7 +36,9 @@ const pizza = [
         img: "https://i.pinimg.com/originals/2d/5b/e4/2d5be4e118530ae96d4f7c789776af77.png"
     },
     {
-        name: ""
+        name: "Espresso",
+        info: "Caffeine",
+        price: 50,
+        img: "https://globalassets.starbucks.com/assets/ec519dd5642c41629194192cce582135.jpg?impolicy=1by1_wide_topcrop_630"
     }
-
 ]
