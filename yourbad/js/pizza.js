@@ -1,3 +1,5 @@
+export { pizza };
+
 const pizza = [
     {
         name: "Caprese Pizza",
