@@ -1,7 +1,10 @@
 import "../style.css";
-import { pizza } from "./pizza.js"
-document.querySelector("#title").innerHTML
-const
+import { pizza } from "./pizza";
+import { DOMSelectors } from "./dom";
+console.log(menu)
+
+
+
 
 
 
