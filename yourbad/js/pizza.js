@@ -5,13 +5,13 @@ const pizza = [
         name: "Caprese Pizza",
         info: "Includes Mozzarella Cheese with fresh basil and fresh tomato",
         price: 25,
-        img = "https://cdn.loveandlemons.com/wp-content/uploads/2019/09/margherita-pizza.jpg"
+        img: "https://cdn.loveandlemons.com/wp-content/uploads/2019/09/margherita-pizza.jpg"
     },
     {
         name: "Pepperoni Pizza",
         info: "Includes fresh tomato sauce with Mozzarella Cheese and freshly made pepperoni",
         price: 30,
-        img = "https://www.theimpulsivebuy.com/wordpress/wp-content/uploads/2022/01/phspicylover1.jpeg"
+        img: "https://www.theimpulsivebuy.com/wordpress/wp-content/uploads/2022/01/phspicylover1.jpeg"
     },
     {
         name: "Hawaiian Pizza",

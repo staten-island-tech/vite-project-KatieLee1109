@@ -3,4 +3,4 @@ const DOMSelectors = {
     h1: document.getElementById("name"),
     div: document.getElementById("main"),
 };
-export { DOMSelectors }
+export { DOMSelectors };
