@@ -17,12 +17,8 @@ function makemenu() {
         <button id="buy">Choose</button>
         </div>
         `
-
-
-
             ))
-
-}
+};
 
 
 
