@@ -6,6 +6,23 @@
   text-align: center;
 }
 :root{
-  
+  --black: #000;
+  --light-grey: #555;
+  --purple: #529;
+  --primary: var(--light-grey);
+  --secondary: var(--purple);
+
+  --h1: 8rem;
+  --h2: 6rem;
+  --h3: 5rem
+  --h4: 4.3rem;
 }
+h1{
+  font-size: var(--h1);
+}
+h2{
+  font-size: var(--h2);
+}
+
+
 
