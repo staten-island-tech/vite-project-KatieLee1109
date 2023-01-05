@@ -1,3 +1,4 @@
+import{./btn};
 html, 
 body{
     background-color: var(--img);
@@ -62,16 +63,16 @@ body{
 
 .dark {
     --header: var(--dark-header);
-    --bg: var(--dark-img);
-    --imgbg: var(var(--dark-imgtwo));
+    --img: var(--dark-img);
+    --imgtwo: var(var(--dark-imgtwo));
 }
 
 .main {
-    background-color: var(--header);
+    background-color: var(--dark-header);
 }
 
 .header {
-    background-color: var(--img);
+    background-color: var(--dark-img);
 }
 
 h1 {
@@ -82,7 +83,7 @@ h4 {
     color: #6af0f5;
 }
 
-.allitems {
+.all {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -90,10 +91,10 @@ h4 {
     width: 98.5vw;
     justify-content: space-around;
     align-content: space-around;
-    font-family: 'Bitter', serif;
+    font-family: 'Rowdies', cursive;
 }
 
-.pizza-card {
+.make-card {
     margin-top: 40px;
     text-align: center;
     background-color: var(--imgtwo);
@@ -105,13 +106,13 @@ h4 {
     width: 30%
 }
 
-.pizza-name {
+.name {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 30px;
 }
 
-.pizza-image {
+.pizza-img{
     margin-top: 50px;
     margin-left: 50%;
     margin-right: 50%;
@@ -131,7 +132,7 @@ h4 {
     font-size: 20px;
     margin-bottom: 10px;
 }
-.opt-btn{
+.btn{
   margin-top: 35px;
   height: 20px;
   font-size: 0.5rem;
@@ -150,10 +151,10 @@ h4 {
   border-radius: 10px;
   text-align: center
 }
-.pizza-card{
+.make-card{
   margin-top: 40px;
   text-align: center;
-  background-color: var(--imgbg);
+  background-color: var(--imgtwo);
   border: 3px solid black;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -178,10 +179,10 @@ h4 {
   border-radius: 10px;
   text-align: center
 }
-.pizza-card{
+.make-card{
   margin-top: 40px;
   text-align: center;
-  background-color: var(--imgbg);
+  background-color: var(--imgtwo);
   border: 3px solid black;
   border-radius: 10px;
   margin-bottom: 20px;
