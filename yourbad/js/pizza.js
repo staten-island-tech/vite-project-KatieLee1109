@@ -1,4 +1,3 @@
-export { pizza };
 
 const pizza = [
     {
@@ -42,5 +41,30 @@ const pizza = [
         info: "Caffeine",
         price: 50,
         img: "https://globalassets.starbucks.com/assets/ec519dd5642c41629194192cce582135.jpg?impolicy=1by1_wide_topcrop_630"
-    }
-]
+    },
+    {
+        name: "Strawberry Smoothie",
+        info: "Made with fresh strawberries",
+        price: 8,
+        img: "https://www.thefieryvegetarian.com/wp-content/uploads/2021/04/vegan-strawberry-banana-smoothe-735x1106.jpg"
+    },
+    {
+        name: "Banana Smoothie",
+        info: "Made with Freshly cut bananas",
+        price: 6,
+        img: "https://nourishplate.com/wp-content/uploads/2021/06/Apple-Banana-Smoothie-Recipe-7.jpg"
+    },
+    {
+        name: "Mixed Fruits",
+        info: "Freshly cut strawberries, peaches, oranges, and bananas",
+        price: 12,
+        img: "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Chilled-Mixed-Fruit_exps41090_CW143039C09_16_6bC_RMS.jpg"
+    },
+    {
+        name: "Mixed Berries",
+        info: "Freshly picked blackberries, blueberries, and rasberries",
+        price: 10,
+        img:"https://healthyfitnessmeals.com/wp-content/uploads/2018/01/berry-fruit-salad-5.jpg"
+    },
+];
+export { pizza };

@@ -1,28 +1,200 @@
+html, 
+body{
+    background-color: var(--img);
+} 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-*{
-  background-color: blanchedalmond;
-  font-size: 80 px;
-  font-family: 'Dancing Script', cursive;
+:root {
+    --light-header: #6af0f5;
+    --light-img: #9fa8f7;
+    --light-imgtwo: #c34ef5b2;
+
+    --dark-header: #2e006f;
+    --dark-img: #0e025d;
+    --dark-imgtwo: #6e6e6e;
+
+    --darkblue: #034490;
+    --darkpurple: #38044e;
+    --darkpink: #4d063e;
+
+    
+  
+  :root {
+      /* Typography */
+      --h1: 7rem;
+      --h2: 5.2rem;
+      --h3: 3.5rem;
+      --h4: 2.5rem;
+      --h5: 1.6rem;
+      
+      font-family: 'Rowdies', cursive;
+  h1 {
+      font-size: var(--h1);
+  }
+  
+  h2 {
+      font-size: var(--h2)
+  }
+  
+  h3 {
+      font-size: var(--h3)
+  }
+  
+  h4 {
+      font-size: var(--h4)
+  }
+  
+  h5 {
+      font-size: var(--h5)
+  }
+
+}
+
+.light {
+    --header: var(--light-header);
+    --img: var(--light-img);
+    --imgtwo: var(--light-imgtwo);
+}
+
+.dark {
+    --header: var(--dark-header);
+    --bg: var(--dark-img);
+    --imgbg: var(var(--dark-imgtwo));
+}
+
+.main {
+    background-color: var(--header);
+}
+
+.header {
+    background-color: var(--img);
+}
+
+h1 {
+    color: #9fa8f7 ;
+}
+
+h4 {
+    color: #6af0f5;
+}
+
+.allitems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 98.5vw;
+    justify-content: space-around;
+    align-content: space-around;
+    font-family: 'Bitter', serif;
+}
+
+.pizza-card {
+    margin-top: 40px;
+    text-align: center;
+    background-color: var(--imgtwo);
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 30%
+}
+
+.pizza-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.pizza-image {
+    margin-top: 50px;
+    margin-left: 50%;
+    margin-right: 50%;
+    text-align: center;
+    width:370px;
+    height:260px;
+    margin: 0 auto;
+}
+
+.pizza-price {
+    margin-top: 10px;
+    font-size: 40px;
+
+}
+
+.pizza-info {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.opt-btn{
+  margin-top: 35px;
+  height: 20px;
+  font-size: 0.5rem;
+  padding: 1px 3px;
+  width: 6rem;
+  height: 2rem;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.theme {
+  padding: 1px 2px;
+  font-size: 20px;
+  border: none;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 10px;
+  text-align: center
+}
+.pizza-card{
+  margin-top: 40px;
   text-align: center;
+  background-color: var(--imgbg);
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 80%
 }
-:root{
-  --black: #000;
-  --light-grey: #555;
-  --purple: #529;
-  --primary: var(--light-grey);
-  --secondary: var(--purple);
-
-  --h1: 8rem;
-  --h2: 6rem;
-  --h3: 5rem
-  --h4: 4.3rem;
+.pizza-price{
+  font-size: 30px;
 }
-h1{
-  font-size: var(--h1);
-}
-h2{
-  font-size: var(--h2);
+.pizza-img{
+ width: 280px;
+ height: 200px;
 }
 
+.theme {
+  padding: 1px 2px;
+  font-size: 20px;
+  border: none;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 10px;
+  text-align: center
+}
+.pizza-card{
+  margin-top: 40px;
+  text-align: center;
+  background-color: var(--imgbg);
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 30%;
+}
+.pizza-price{
+  font-size: 30px;
+}
+.pizza-img {
+ width: 230px;
+ height: 150px;
+}
 
 

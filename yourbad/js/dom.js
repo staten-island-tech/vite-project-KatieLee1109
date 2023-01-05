@@ -1,6 +1,17 @@
-const DOMSelectors = {
-    button: document.getElementById("btn"),
-    h1: document.getElementById("name"),
-    div: document.getElementById("main"),
+const DOMSelectors ={
+    pizza: document.getElementById("pizza"),
+    drink: document.getElementById("drink"),
+    fruit: document.getElementById("fruit"),
+    menuitems: document.getElementById("menu-items"),
 };
-export { DOMSelectors };
+export{DOMSelectors};
+
+const DOMSelectorstwo ={
+    allitems: document.getElementById("all"),
+    pizza: document.getElementById("pizza"),
+    drink: document.getElementById("drink"),
+    fruit: document.getElementById("fruit"),
+    light: document.getElementById("light"),
+    dark: document.getElementById("dark"),
+};
+export{DOMSelectorstwo};
