@@ -1,4 +1,4 @@
-import{./btn};
+
 html, 
 body{
     background-color: var(--img);
@@ -21,10 +21,6 @@ body{
     --darkblue: #034490;
     --darkpurple: #38044e;
     --darkpink: #4d063e;
-
-    
-  
-  :root {
       /* Typography */
       --h1: 7rem;
       --h2: 5.2rem;
@@ -33,6 +29,7 @@ body{
       --h5: 1.6rem;
       
       font-family: 'Rowdies', cursive;
+}
   h1 {
       font-size: var(--h1);
   }
@@ -53,7 +50,7 @@ body{
       font-size: var(--h5)
   }
 
-}
+
 
 .light {
     --header: var(--light-header);
@@ -106,7 +103,7 @@ h4 {
     width: 30%
 }
 
-.name {
+.pizza-name {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 30px;

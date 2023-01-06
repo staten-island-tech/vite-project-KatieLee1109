@@ -1,31 +1,29 @@
 import "../style.css";
+import "../btn.css";
 import { DOMSelectors } from "./dom";
-import { DOMSelectorsTwo } from "./dom";
 import { pizza } from "./pizza";
 console.log(pizza);
 
-DOMSelectorsTwo.light.addEventListener("click", function () {
+DOMSelectors.light.addEventListener("click", function () {
   if (document.body.classList.contains("dark")) {
     document.body.classList.add("light");
     document.body.classList.remove("dark");
   }
 });
 
-DOMSelectorsTwo.dark.addEventListener("click", function () {
+DOMSelectors.dark.addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
     document.body.classList.add("dark");
     document.body.classList.remove("light");
   }
 });
-
-
 function all() {
   allitems
     .forEach((items) => {
       DOMSelectors.allitems.insertAdjacentHTML(
         "beforeend",
         `<div class="make-card">
-                <h2 class="name">${items.name}</h2>
+                <h2 class="pizza-name">${items.name}</h2>
                 <img class="pizza-img" src="${items.img}">
                 <p class="pizza-price">$${items.price}</p>
                 <p class="pizza.info">${items.info}</p>
@@ -42,7 +40,7 @@ function food() {
       DOMSelectors.allitems.insertAdjacentHTML(
         "beforeend",
         `<div class="make-card">
-          <h2 class="name">${pizza.name}</h2>
+          <h2 class="pizza-name">${pizza.name}</h2>
           <img class="pizza-img" src="${pizza.img}">
           <p class="pizza-price">$${pizza.price}</p>
           <p class="pizza-info">${pizza.info}</p>
@@ -59,7 +57,7 @@ function drink() {
       DOMSelectors.allitems.insertAdjacentHTML(
         "beforeend",
         `<div class="make-card">
-          <h2 class="name">${drink.name}</h2>
+          <h2 class="pizza-name">${drink.name}</h2>
           <img class="pizza-img" src="${drink.img}">
           <p class="pizza-price">$${drink.price}</p>
           <p class="pizza-info">${drink.info}</p>
@@ -76,7 +74,7 @@ function fruit() {
       DOMSelectors.allitems.insertAdjacentHTML(
         "beforeend",
         `<div class="make-card">
-          <h2 class="name">${fruit.name}</h2>
+          <h2 class="pizza-name">${fruit.name}</h2>
           <img class="pizza-img" src="${fruit.img}">
           <p class="pizza-price">$${fruit.price}</p>
           <p class="pizza-info">${fruit.info}</p>
