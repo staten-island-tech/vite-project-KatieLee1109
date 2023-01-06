@@ -4,7 +4,7 @@ const DOMSelectors = {
     fruit: document.getElementById("fruit"),
     light: document.getElementById("light"),
     dark: document.getElementById("dark"),
-    allitems: document.getElementById("alltems"),
+    opt: document.querySelectorAll("opt"),
 };
 export { DOMSelectors };
 

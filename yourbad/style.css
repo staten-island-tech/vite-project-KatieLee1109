@@ -64,7 +64,7 @@ body{
     --imgtwo: var(var(--dark-imgtwo));
 }
 
-.main {
+.opt {
     background-color: var(--dark-header);
 }
 

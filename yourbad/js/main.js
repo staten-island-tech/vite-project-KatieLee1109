@@ -2,7 +2,7 @@ import "../style.css";
 import "../btn.css";
 import { DOMSelectors } from "./dom";
 import { pizza } from "./pizza";
-console.log(pizza);
+console.log(createmenu);
 
 DOMSelectors.light.addEventListener("click", function () {
   if (document.body.classList.contains("dark")) {
@@ -17,21 +17,19 @@ DOMSelectors.dark.addEventListener("click", function () {
     document.body.classList.remove("light");
   }
 });
-function all() {
-  allitems
-    .forEach((items) => {
-      DOMSelectors.allitems.insertAdjacentHTML(
-        "beforeend",
-        `<div class="make-card">
-                <h2 class="pizza-name">${items.name}</h2>
-                <img class="pizza-img" src="${items.img}">
-                <p class="pizza-price">$${items.price}</p>
-                <p class="pizza.info">${items.info}</p>
-            </div>`
-      );
-    });
-}
-console.log(all);
+// function createmenu() {
+//   createmenu.forEach(menu) => {
+//     DOMSelectors.opt.insertAdjacentHTML(
+//       "beforeend",
+//       `<div class="make-card">
+//           <h2 class="pizza-name">${pizza.name}</h2>
+//           <img class="pizza-img" src="${pizza.img}">
+//           <p class="pizza-price">$${pizza.price}</p>
+//           <p class="pizza-info">${pizza.info}</p>
+//       </div>`
+//     );
+//   };
+// };
 
 function food() {
   allitems
@@ -71,7 +69,7 @@ function fruit() {
   allitems
     .filter((fruit) => fruit.size.includes("fruit"))
     .forEach((fruit) => {
-      DOMSelectors.allitems.insertAdjacentHTML(
+      DOMSelectors.pizza.insertAdjacentHTML(
         "beforeend",
         `<div class="make-card">
           <h2 class="pizza-name">${fruit.name}</h2>
