@@ -2,7 +2,7 @@
 html, 
 body{
     background-color: var(--img);
-} 
+}
 * {
     margin: 0;
     padding: 0;
@@ -29,9 +29,39 @@ body{
       --h5: 1.6rem;
       
       font-family: 'Rowdies', cursive;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 98.5vw;
+      justify-content: space-around;
+      align-content: space-around;
+      font-family: 'Rowdies', cursive;
 }
+.dark{
+    --darkblue:#034490;
+    --purple: rgb(43, 0, 92);
+    --pink: rgb(213, 0, 221);
+    --yellow: rgb(237, 241, 0);
+
+    --first: var(--darkblue);
+    --second: var(--purple);
+    --third: var(--light-imgtwo);
+    --fourth: var(--yellow);
+}
+
+.light{
+    --lightpurple: rgb(202, 162, 255);
+    --lightpink:rgb(201, 130, 248);
+    --lightblue: rgb(161, 178, 253);
+    --lightgreen: rgb(187, 253, 187);
+   
+}
+
+
   h1 {
       font-size: var(--h1);
+      color: rgb(rgb(213, 0, 221), rgb(237, 241, 0), blue)
   }
   
   h2 {
@@ -63,9 +93,8 @@ body{
     --img: var(--dark-img);
     --imgtwo: var(var(--dark-imgtwo));
 }
-
 .opt {
-    background-color: var(--dark-header);
+    background-color: var(--dark-img);
 }
 
 .header {
@@ -78,17 +107,6 @@ h1 {
 
 h4 {
     color: #6af0f5;
-}
-
-.all {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 98.5vw;
-    justify-content: space-around;
-    align-content: space-around;
-    font-family: 'Rowdies', cursive;
 }
 
 .make-card {
@@ -140,13 +158,15 @@ h4 {
   border-radius: 10px;
 }
 .theme {
-  padding: 1px 2px;
-  font-size: 20px;
-  border: none;
-  width: 6rem;
-  height: 2rem;
-  border-radius: 10px;
-  text-align: center
+    margin-top: 35px;
+    height: 20px;
+    font-size: 0.5rem;
+    padding: 1px 3px;
+    width: 6rem;
+    height: 2rem;
+    margin-left: 20px;
+    border-radius: 10px;
+    align-items: center;
 }
 .make-card{
   margin-top: 40px;
@@ -158,14 +178,14 @@ h4 {
   margin-left: 5px;
   margin-right: 5px;
   width: 80%
-}
+};
 .pizza-price{
   font-size: 30px;
-}
+};
 .pizza-img{
  width: 280px;
  height: 200px;
-}
+};
 
 .theme {
   padding: 1px 2px;
@@ -175,7 +195,7 @@ h4 {
   height: 2rem;
   border-radius: 10px;
   text-align: center
-}
+};
 .make-card{
   margin-top: 40px;
   text-align: center;
@@ -186,13 +206,13 @@ h4 {
   margin-left: 5px;
   margin-right: 5px;
   width: 30%;
-}
+};
 .pizza-price{
   font-size: 30px;
-}
+};
 .pizza-img {
  width: 230px;
  height: 150px;
-}
+};
 
 

@@ -17,19 +17,19 @@ DOMSelectors.dark.addEventListener("click", function () {
     document.body.classList.remove("light");
   }
 });
-// function createmenu() {
-//   createmenu.forEach(menu) => {
-//     DOMSelectors.opt.insertAdjacentHTML(
-//       "beforeend",
-//       `<div class="make-card">
-//           <h2 class="pizza-name">${pizza.name}</h2>
-//           <img class="pizza-img" src="${pizza.img}">
-//           <p class="pizza-price">$${pizza.price}</p>
-//           <p class="pizza-info">${pizza.info}</p>
-//       </div>`
-//     );
-//   };
-// };
+function createmenu() {
+  createmenu.forEach((menu) => {
+    DOMSelectors.opt.insertAdjacentHTML(
+      "beforeend",
+      `<div class="make-card">
+          <h2 class="pizza-name">${menu.name}</h2>
+          <img class="pizza-img" src="${menu.img}">
+          <p class="pizza-price">$${menu.price}</p>
+          <p class="pizza-info">${menu.info}</p>
+      </div>`
+    );
+  });
+};
 
 function food() {
   allitems
@@ -88,19 +88,23 @@ function clear() {
 }
 console.log(clear);
 
-document.getElementById("all").addEventListener("click", function () {
-  allitems();
+document.getElementById("opt").addEventListener("click", function () {
+  opt();
+  clear();
 });
 
 document.getElementById("pizza").addEventListener("click", function () {
   pizza();
+  clear();
 });
 
 document.getElementById("drink").addEventListener("click", function () {
   drink();
+  clear();
 });
 
 document.getElementById("fruit").addEventListener("click", function () {
   fruit();
+  clear();
 });
 
