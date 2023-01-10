@@ -1,5 +1,5 @@
 
-const pizza = [
+const menu = [
     {
         name: "Caprese Pizza",
         info: "Includes Mozzarella Cheese with fresh basil and fresh tomato",
@@ -64,7 +64,7 @@ const pizza = [
         name: "Mixed Berries",
         info: "Freshly picked blackberries, blueberries, and rasberries",
         price: 10,
-        img:"https://healthyfitnessmeals.com/wp-content/uploads/2018/01/berry-fruit-salad-5.jpg"
+        img: "https://healthyfitnessmeals.com/wp-content/uploads/2018/01/berry-fruit-salad-5.jpg"
     },
 ];
-export { pizza };
+export { menu };

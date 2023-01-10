@@ -10,33 +10,12 @@ body{
 }
 
 :root {
-    --light-header: #6af0f5;
-    --light-img: #9fa8f7;
-    --light-imgtwo: #c34ef5b2;
-
-    --dark-header: #2e006f;
-    --dark-img: #0e025d;
-    --dark-imgtwo: #6e6e6e;
-
-    --darkblue: #034490;
-    --darkpurple: #38044e;
-    --darkpink: #4d063e;
       /* Typography */
       --h1: 7rem;
       --h2: 5.2rem;
       --h3: 3.5rem;
       --h4: 2.5rem;
       --h5: 1.6rem;
-      
-      font-family: 'Rowdies', cursive;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      width: 98.5vw;
-      justify-content: space-around;
-      align-content: space-around;
-      font-family: 'Rowdies', cursive;
 }
 .dark{
     --darkblue:#034490;
@@ -55,7 +34,11 @@ body{
     --lightpink:rgb(201, 130, 248);
     --lightblue: rgb(161, 178, 253);
     --lightgreen: rgb(187, 253, 187);
-   
+
+    --first: var(--lightpurple);
+    --second:var(--lightpink);
+    --third:var(--lightblue);
+    --fourth:var(--lightgreen);
 }
 
 
@@ -178,14 +161,14 @@ h4 {
   margin-left: 5px;
   margin-right: 5px;
   width: 80%
-};
+}
 .pizza-price{
   font-size: 30px;
-};
+}
 .pizza-img{
  width: 280px;
  height: 200px;
-};
+}
 
 .theme {
   padding: 1px 2px;
@@ -195,7 +178,7 @@ h4 {
   height: 2rem;
   border-radius: 10px;
   text-align: center
-};
+}
 .make-card{
   margin-top: 40px;
   text-align: center;
@@ -206,13 +189,22 @@ h4 {
   margin-left: 5px;
   margin-right: 5px;
   width: 30%;
-};
+}
 .pizza-price{
   font-size: 30px;
-};
+}
 .pizza-img {
  width: 230px;
  height: 150px;
-};
+}
+font-family: 'Rowdies', cursive;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 98.5vw;
+      justify-content: space-around;
+      align-content: space-around;
+      font-family: 'Rowdies', cursive;
 
 

@@ -1,22 +1,9 @@
 import "../style.css";
 import "../btn.css";
 import { DOMSelectors } from "./dom";
-import { pizza } from "./pizza";
+import { menu } from "./pizza";
 console.log(createmenu);
 
-DOMSelectors.light.addEventListener("click", function () {
-  if (document.body.classList.contains("dark")) {
-    document.body.classList.add("light");
-    document.body.classList.remove("dark");
-  }
-});
-
-DOMSelectors.dark.addEventListener("click", function () {
-  if (document.body.classList.contains("light")) {
-    document.body.classList.add("dark");
-    document.body.classList.remove("light");
-  }
-});
 function createmenu() {
   createmenu.forEach((menu) => {
     DOMSelectors.opt.insertAdjacentHTML(
