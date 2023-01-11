@@ -1,14 +1,4 @@
 
-html, 
-body{
-    background-color: var(--img);
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
       /* Typography */
       --h1: 7rem;
@@ -17,6 +7,7 @@ body{
       --h4: 2.5rem;
       --h5: 1.6rem;
 }
+
 .dark{
     --darkblue:#034490;
     --purple: rgb(43, 0, 92);
@@ -36,175 +27,44 @@ body{
     --lightgreen: rgb(187, 253, 187);
 
     --first: var(--lightpurple);
-    --second:var(--lightpink);
-    --third:var(--lightblue);
-    --fourth:var(--lightgreen);
+    --second: var(--lightpink);
+    --third: var(--lightblue);
+    --fourth: var(--lightgreen);
 }
 
-
-  h1 {
-      font-size: var(--h1);
-      color: rgb(rgb(213, 0, 221), rgb(237, 241, 0), blue)
-  }
-  
-  h2 {
-      font-size: var(--h2)
-  }
-  
-  h3 {
-      font-size: var(--h3)
-  }
-  
-  h4 {
-      font-size: var(--h4)
-  }
-  
-  h5 {
-      font-size: var(--h5)
-  }
-
-
-
-.light {
-    --header: var(--light-header);
-    --img: var(--light-img);
-    --imgtwo: var(--light-imgtwo);
-}
-
-.dark {
-    --header: var(--dark-header);
-    --img: var(--dark-img);
-    --imgtwo: var(var(--dark-imgtwo));
-}
-.opt {
-    background-color: var(--dark-img);
-}
-
-.header {
-    background-color: var(--dark-img);
-}
-
-h1 {
-    color: #9fa8f7 ;
-}
-
-h4 {
-    color: #6af0f5;
-}
-
-.make-card {
-    margin-top: 40px;
+head,
+body,
+* {
+    font-family: 'Rowdies';
     text-align: center;
-    background-color: var(--imgtwo);
-    border: 3px solid black;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 30%
+    border-radius: 20px;
+    background-color: var(--first);
 }
 
-.pizza-name {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
+.display{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15;
+    padding: 15;
 }
-
-.pizza-img{
-    margin-top: 50px;
-    margin-left: 50%;
-    margin-right: 50%;
-    text-align: center;
-    width:370px;
-    height:260px;
-    margin: 0 auto;
+.maindiv{
+    color: var(--second);
 }
-
-.pizza-price {
-    margin-top: 10px;
-    font-size: 40px;
-
-}
-
-.pizza-info {
-    font-size: 20px;
-    margin-bottom: 10px;
+h1{
+    color: var(--second);
+    font-size: var(--h1);
 }
 .btn{
-  margin-top: 35px;
-  height: 20px;
-  font-size: 0.5rem;
-  padding: 1px 3px;
-  width: 6rem;
-  height: 2rem;
-  margin-left: 20px;
-  border-radius: 10px;
+    color: var(--second);
+    font-size: var(--h4);
 }
-.theme {
-    margin-top: 35px;
-    height: 20px;
-    font-size: 0.5rem;
-    padding: 1px 3px;
-    width: 6rem;
-    height: 2rem;
-    margin-left: 20px;
-    border-radius: 10px;
-    align-items: center;
+.order{
+    color: var(--third);
+    font-size: var(--h4);
 }
-.make-card{
-  margin-top: 40px;
-  text-align: center;
-  background-color: var(--imgtwo);
-  border: 3px solid black;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 80%
+.img{
+    width: 40vh;
+    height: 30vh;
 }
-.pizza-price{
-  font-size: 30px;
-}
-.pizza-img{
- width: 280px;
- height: 200px;
-}
-
-.theme {
-  padding: 1px 2px;
-  font-size: 20px;
-  border: none;
-  width: 6rem;
-  height: 2rem;
-  border-radius: 10px;
-  text-align: center
-}
-.make-card{
-  margin-top: 40px;
-  text-align: center;
-  background-color: var(--imgtwo);
-  border: 3px solid black;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 30%;
-}
-.pizza-price{
-  font-size: 30px;
-}
-.pizza-img {
- width: 230px;
- height: 150px;
-}
-font-family: 'Rowdies', cursive;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      width: 98.5vw;
-      justify-content: space-around;
-      align-content: space-around;
-      font-family: 'Rowdies', cursive;
-
-
