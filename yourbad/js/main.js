@@ -1,14 +1,13 @@
 import "../style.css";
-import "../btn.css";
 import { DOMSelectors } from "./dom";
 import { menu } from "./pizza";
 console.log(createmenu);
 
-function createmenu(){
-  menu.forEach((menu) =>{
+function createmenu() {
+  menu.forEach((menu) => {
     DOMSelectors.mainDiv.insertAdjacentHTML
-    ("beforeend",
-    `
+      ("beforeend",
+        `
     <h2> ${menu.name}<h2>
     <img class="img" src= ${menu.img}
     alt=""/>
@@ -20,26 +19,24 @@ function createmenu(){
     `)
   });
 }
-document.querySelector(".btn").addEventListener("click", function(){
-  if(document.body.classList.contains("light");
+document.querySelector(".btn").addEventListener("click", function () {
+  if (document.body.classList.contains("light")
   ) {
     document.body.classList.add("dark");
-
     document.body.classList.remove("light");
   } else {
     document.body.classList.add("light");
-
     document.body.classList.remove("dark");
   }
 });
-function drink(){
-  DOMSelectors.mainDiv.innerHTML="";
+function drink() {
+  DOMSelectors.mainDiv.innerHTML = "";
   menu
-  .filter((drink) => drink.drink === "yes")
-  .forEach(drink => {
-    DOMSelectors.mainDiv.insertAdjacentHTML(
-      "beforeend",
-      `<h2> ${drink.name}<h2>
+    .filter((drink) => drink.drink === "yes")
+    .forEach(drink => {
+      DOMSelectors.mainDiv.insertAdjacentHTML(
+        "beforeend",
+        `<h2> ${drink.name}<h2>
       <img class="img" src= ${drink.img}
       alt=""/>
       <p id="outputText"> Price: ${drink.price}<p>
@@ -48,17 +45,17 @@ function drink(){
       <div>
       <div id="mainCard">
       `
-    );
-  });
+      );
+    });
 }
-function fruit(){
-  DOMSelectors.mainDiv.innerHTML="";
+function fruit() {
+  DOMSelectors.mainDiv.innerHTML = "";
   menu.filter((fruit) => fruit.fruit === "yes")
-  .forEach(fruit => {
-    DOMSelectors.mainDiv.insertAdjacentHTML
-    (
-      "beforeend",
-      `<h2> ${fruit.name}<h2>
+    .forEach(fruit => {
+      DOMSelectors.mainDiv.insertAdjacentHTML
+        (
+          "beforeend",
+          `<h2> ${fruit.name}<h2>
       <img class="img" src= ${fruit.img}
       alt=""/>
       <p id="outputText"> Price: ${fruit.price}<p>
@@ -66,17 +63,18 @@ function fruit(){
       <button id="order" class="order"> choose <button>
       <div>
       <div id="mainCard">`
-    );
-  });
+        );
+    });
 }
-function pizza(){
-  DOMSelectors.mainDiv.innerHTML="";
-  menu.filter((pizza) => pizza.pizza === "yes")
-  .forEach(pizza => {
-    DOMSelectors.mainDiv.insertAdjacentHTML
-    (
-      "beforeend",
-      `<h2> ${pizza.name}<h2>
+const pizza = document.getElementById("pizza-btn");
+pizza.addEventListener("click", function () {
+  display.innerHTML = "";
+  menu.filter((pizza) => pizza.type === "pizza")
+    .forEach(pizza => {
+      DOMSelectors.mainDiv.insertAdjacentHTML
+        (
+          "beforeend",
+          `<h2> ${pizza.name}<h2>
       <img class="img" src= ${pizza.img}
       alt=""/>
       <p id="outputText"> Price: ${pizza.price}<p>
@@ -84,16 +82,13 @@ function pizza(){
       <button id="order" class="order"> choose <button>
       <div>
       <div id="mainCard">`
-    );
-  });
-}
-DOMSelectors.pizza.addEventListener("Click", function(){
-  pizza();
+        );
+    });
 });
-DOMSelectors.drink.addEventListener("Click", function(){
+DOMSelectors.drink.addEventListener("Click", function () {
   drink();
 });
-DOMSelectors.fruit.addEventListener("Click", function(){
+DOMSelectors.fruit.addEventListener("Click", function () {
   fruit();
 });
 
