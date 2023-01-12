@@ -5,7 +5,7 @@ const DOMSelectors = {
     drink: document.getElementById("drink"),
     fruit: document.getElementById("fruit"),
     pizza: document.getElementById("pizza"),
-    display: document.querySelectorAll("#display"),
+    display: document.querySelector("#display"),
 };
 export { DOMSelectors };
 
