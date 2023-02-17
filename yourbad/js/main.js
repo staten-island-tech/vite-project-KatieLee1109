@@ -37,8 +37,7 @@ pizza.addEventListener("click", function () {
   menu.filter((pizza) => pizza.type === "pizza")
     .forEach(pizza => {
       DOMSelectors.mainDiv.insertAdjacentHTML
-        (
-          "beforeend",
+        ("beforeend",
           `<h2> ${pizza.name}<h2>
       <img class="img" src= ${pizza.img}
       alt=""/>
